@@ -9,9 +9,11 @@ Modulus hashing is a technique for assigning data to servers or buckets. It work
 
 For example, if we have 4 servers and hash("data") is 57, then 57 % 3 = 0. This means "data" gets assigned to server #0.
 
-![diagram of modulus hashing](https://excalidraw.com/#json=lCwXToLQAyZvylB-KUecg,Tfa9wTbMb2JjQd1MZOi9CA)
+![diagram of modulus hashing](./docs/img/modulus-hashing.png)
 
-# Limitations
+[source](https://excalidraw.com/#json=lCwXToLQAyZvylB-KUecg,Tfa9wTbMb2JjQd1MZOiCA)
+
+## Limitations
 
 1. Every time we add/remove a server the data gets remapped to different servers.
 1. Can still lead to uneven data distribution.
